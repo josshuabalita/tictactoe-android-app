@@ -17,4 +17,4 @@ Featuring a unique **Squid Game UI design**, smooth **animations**, and **dynami
 ## 🚀 Installation & Setup
 ### **Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/TicTacToe-App.git](https://github.com/josshuabalita/tictactoe-android-app.git
+git clone https://github.com/josshuabalita/tictactoe-android-app.git
