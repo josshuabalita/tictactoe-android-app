@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">tictactoe</string>
+    <string name="player_1">PLAYER 1</string>
+    <string name="player_2">PLAYER 2</string>
+    <string name="symbolX">X</string>
+    <string name="symbolO">O</string>
+    <string name="player_1_s_turn">Player 1\'s Turn…</string>
+    <string name="player_2_s_turn">Player 2\'s Turn…</string>
+    <string name="soldier">SOLDIER</string>
 </resources>

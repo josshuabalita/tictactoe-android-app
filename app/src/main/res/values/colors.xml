@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="squidRed">#ed1b76</color>
+    <color name="squidRedIdentifier">#f44786</color>
+    <color name="squidGreen">#037a76</color>
+    <color name="squidGreenIdentifier">#249f9c</color>
 </resources>
