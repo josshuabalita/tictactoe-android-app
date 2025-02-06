@@ -12,8 +12,8 @@
         android:id="@+id/background_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/squid_game_bg"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/squid_game_bg" />
 
     <View
         android:layout_width="match_parent"
@@ -36,6 +36,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/playerLayout_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -63,10 +64,19 @@
                 android:textColor="@color/squidGreen"
                 android:textSize="60sp" />
 
+            <Button
+                android:id="@+id/playAgainButton_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/squid_game_font"
+                android:text="@string/play_again"
+                android:visibility="gone" />
+
         </LinearLayout>
 
 
         <LinearLayout
+            android:id="@+id/playerLayout_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -94,11 +104,20 @@
                 android:textColor="@color/squidRed"
                 android:textSize="60sp" />
 
+            <Button
+                android:id="@+id/playAgainButton_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/squid_game_font"
+                android:text="@string/play_again"
+                android:visibility="gone" />
+
         </LinearLayout>
 
     </LinearLayout>
 
     <GridLayout
+        android:id="@+id/gridBoard"
         android:layout_width="403dp"
         android:layout_height="495dp"
         android:columnCount="3"
@@ -116,10 +135,11 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:contentDescription="@string/pawn"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button2"
@@ -127,95 +147,104 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:contentDescription="@string/pawn"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button3"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button4"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button5"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button6"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button7"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button8"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
         <ImageButton
             android:id="@+id/button9"
+            android:contentDescription="@string/pawn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:background="@drawable/button_border"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="false"
-            android:onClick="onCellClicked" />
+            android:background="@drawable/button_border"
+            android:onClick="onCellClicked"
+            android:scaleType="centerCrop" />
 
     </GridLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="399dp"
         android:layout_height="147dp"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -229,22 +258,22 @@
             android:layout_height="120dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/soldier"
-            android:src="@drawable/soldier"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/soldier" />
 
         <TextView
             android:id="@+id/turnIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/squid_game_font"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:shadowColor="#000000"
-            android:shadowRadius="5"
+            android:gravity="center"
             android:letterSpacing="0.08"
             android:padding="10dp"
-            android:gravity="center"
-            android:textAlignment="center" />
+            android:shadowColor="#000000"
+            android:shadowRadius="5"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
