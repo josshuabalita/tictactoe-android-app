@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void disableBoard() {   
-        // Disable all board buttons after game ends
+        // Disable all board buttons after game end
         GridLayout gridBoard = findViewById(R.id.gridBoard);
         for (int i = 0; i < gridBoard.getChildCount(); i++) {
             View v = gridBoard.getChildAt(i);
